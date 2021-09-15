@@ -1,5 +1,5 @@
 #### SOAP PET SERVICE
-Simple client-server communication example via SOAP protocol. Client side code for RMI generated from WSDL schema provided from SOAP server.
+Simple client-server communication example via SOAP protocol. Client side code for RMI is generated from WSDL schema provided by SOAP server.
 
 #### How to run?
 
@@ -8,4 +8,5 @@ Simple client-server communication example via SOAP protocol. Client side code f
 3. SOAP server is running now! localhost:8080/employeeservice?wsdl for WSDL schema
 4. clean -> install *soap-client* maven module
 5. run  SoapPetServiceClient
+6. Enjoy SOAP protocol via JAX-WS!
 
