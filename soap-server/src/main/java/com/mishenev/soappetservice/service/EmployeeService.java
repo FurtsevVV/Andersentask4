@@ -13,8 +13,8 @@ import javax.jws.WebService;
 public interface EmployeeService {
 
     /**
-     * Jax-ws WebMethod for retrieving employee's details.
-     * @param name Employee's name.
+     * JAX-WS WebMethod for retrieving employee's details.
+     * @param name employee's name.
      * @return employee's details.
      */
     @WebMethod

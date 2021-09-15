@@ -27,7 +27,7 @@
                         </goals>
                         <configuration>
                             <sources>
-                                <source>${basedir}/target/generated</source>
+                                <source>${basedir}/target/generated/src/main/java</source>
                             </sources>
                         </configuration>
                     </execution>
@@ -42,7 +42,7 @@
                     <wsdlUrls>
                         <url>http://localhost:8080/employeeservice?wsdl</url>
                     </wsdlUrls>
-                    <packageName>com.raps.code.generate.ws</packageName>
+                    <packageName>com.mishenev.soappetservice</packageName>
                     <keep>true</keep>
                     <sourceDestDir>${project.build.directory}/generated/src/main/java</sourceDestDir>
                 </configuration>
