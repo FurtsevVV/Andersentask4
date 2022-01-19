@@ -40,7 +40,7 @@
                 <version>2.6</version>
                 <configuration>
                     <wsdlUrls>
-                        <url>http://localhost:8080/employeeservice?wsdl</url>
+                        <url>http://localhost:8090/employeeservice?wsdl</url>
                     </wsdlUrls>
                     <packageName>com.mishenev.soappetservice</packageName>
                     <keep>true</keep>

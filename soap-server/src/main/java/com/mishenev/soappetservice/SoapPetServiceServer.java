@@ -16,7 +16,7 @@ public class SoapPetServiceServer {
     public static void main(String[] args) {
 
         LOGGER.info("Creating WEB server and publishing SOAP endpoint");
-        Endpoint.publish("http://localhost:8080/employeeservice",
+        Endpoint.publish("http://localhost:8090/employeeservice",
                 new EmployeeServiceImpl());
     }
 }
