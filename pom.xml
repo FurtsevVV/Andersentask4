@@ -11,7 +11,6 @@
 
     <modules>
         <module>soap-server</module>
-        <module>soap-client</module>
     </modules>
 
     <properties>
