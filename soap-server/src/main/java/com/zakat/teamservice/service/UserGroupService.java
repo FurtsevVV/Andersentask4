@@ -22,9 +22,6 @@ public interface UserGroupService {
     UserGroup getUserGroupById(int userGroup_id);
     @WebMethod
     void updateUserGroup(UserGroup userGroup);
-    @WebMethod
-    boolean addUserToGroup(User user, String groupName);
-    @WebMethod
-    boolean deleteUserFromGroup(User user, String groupName);
+
 
 }

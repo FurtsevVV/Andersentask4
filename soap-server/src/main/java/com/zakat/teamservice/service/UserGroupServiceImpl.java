@@ -57,18 +57,5 @@ public class UserGroupServiceImpl implements UserGroupService {
     userGroupDAO.updateUserGroup(userGroup);
     }
 
-    @Override
-    public boolean addUserToGroup(User user, String groupName) {
-        UserGroup userGroup = userGroupDAO.getUserGroupByName(groupName);
-        if(userGroup==null)
-            return false;
-        user.setUserGroup(userGroup);
-        userDAO.updateUser(user);
-        return true;
-    }
 
-    @Override
-    public boolean deleteUserFromGroup(User user, String groupName) {
-        return false;
-    }
 }

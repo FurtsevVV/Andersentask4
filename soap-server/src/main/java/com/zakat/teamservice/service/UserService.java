@@ -51,5 +51,28 @@ public interface UserService {
     @WebMethod
     void addUser(User user);
 
+    /**
+     * Get User by user telegram id
+     * @param userTelegramId
+     * @return
+     */
+    @WebMethod
+    User getUserByUserTelegramId(String userTelegramId);
 
+    /**
+     * Delete user by telegram id
+     * @param userTelegramId
+     * @return
+     */
+    @WebMethod
+    boolean deleteUserByTelegramId(String userTelegramId);
+
+    /**
+     * Add user to UserGroup
+     * @param telegramUserId
+     * @param groupName
+     * @return
+     */
+    @WebMethod
+    boolean addUserToUserGroup(String telegramUserId, String groupName);
 }

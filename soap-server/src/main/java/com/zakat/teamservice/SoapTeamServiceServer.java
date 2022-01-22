@@ -1,5 +1,6 @@
 package com.zakat.teamservice;
 
+import com.zakat.teamservice.model.RoleEnum;
 import com.zakat.teamservice.model.User;
 import com.zakat.teamservice.model.UserGroup;
 import com.zakat.teamservice.service.UserGroupService;
@@ -7,6 +8,7 @@ import com.zakat.teamservice.service.UserGroupServiceImpl;
 import com.zakat.teamservice.service.UserService;
 import com.zakat.teamservice.service.UserServiceImpl;
 
+import java.util.List;
 import java.util.logging.Logger;
 import javax.xml.ws.Endpoint;
 
@@ -20,24 +22,32 @@ public class SoapTeamServiceServer {
     private static final Logger LOGGER = Logger.getGlobal();
 
     public static void main(String[] args) {
-        UserGroupService userGroupService = new UserGroupServiceImpl();
 
-        UserService userService = new UserServiceImpl();
+UserService userService = new UserServiceImpl();
+UserGroupService ugService = new UserGroupServiceImpl();
 
+userService.addUserToUserGroup("@yser4", "Frends");
 
-        User user = new User("DD", "AA", "3424");
-        User user1 = new User("EE", "TT", "3004");
-        UserGroup userGroup = new UserGroup("RED", "RED");
-//        userService.addUser(user);
-//        userService.addUser(user1);
-//        userGroupService.addUserGroup(userGroup);
-//        System.out.println(userService.getUserById(1));
-//        System.out.println(userService.getUserById(2));
-//        System.out.println(userGroupService.getUserGroupById(1));
-       // System.out.println(userGroupService.addUserToGroup(user, "RED"));.
-        User us = userService.getUserById(1);
-        System.out.println(us.getUserGroup());
-//        System.out.println(userGroupService.addUserToGroup(user, "IT"));
+//        System.out.println(user);
+//user.setUsername("Kot Kit");
+//user.setUserRole(RoleEnum.USER);
+//user.setTelegramUserId("@yser4");
+//user.setTelegramChatId("@chat1");
+//userService.addUser(user);
+
+//   List<User> userList= userService.findAllUsers();
+//        System.out.println(userList);
+//        System.out.println(userService.findAllUsers());
+//User user = userService.getUserByUserTelegramId("@yser4");
+//UserGroup userGroup = ugService.getUserGroupById(4);
+//user.setUserGroup(userGroup);
+//userService.updateUser(user);
+//        System.out.println(userService.findAllUsers());
+
+//        System.out.println(ugService.findAllUserGroup());
+////UserGroup userGroup = new UserGroup("Group1", "YELLOW");
+//        System.out.println(ugService.deleteUserGroup(4));
+//        System.out.println(ugService.findAllUserGroup());
 
 
 

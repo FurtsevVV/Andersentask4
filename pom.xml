@@ -11,6 +11,7 @@
 
     <modules>
         <module>soap-server</module>
+         <module>team-client</module>
     </modules>
 
     <properties>

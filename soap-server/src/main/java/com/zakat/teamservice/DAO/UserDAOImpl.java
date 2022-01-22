@@ -107,4 +107,44 @@ List<User> userList;
 //        List<UserGroup> result = query.getResultList();
         return true;
     }
+
+    @Override
+    public User getUserByUserTelegramId(String userTelegramId) {
+        Session session = factory.getCurrentSession();
+        session.beginTransaction();
+        User user= null;
+        Query query = session.createQuery("FROM User u where u.telegramUserId = :name");
+        query.setParameter("name", userTelegramId);
+        List<User> result = query.getResultList();
+        if(result.size()==0){
+            session.close();
+           return null;}
+              else {
+             user = result.get(0);
+            session.getTransaction().commit();
+            session.close();
+                   }
+        return user;
+    }
+
+    @Override
+    public boolean deleteUserByTelegramId(String userTelegramId) {
+        Session session = factory.getCurrentSession();
+        session.beginTransaction();
+        Query query = session.createQuery("FROM User u where u.telegramUserId = :name");
+        query.setParameter("name", userTelegramId);
+        List<User> result = query.getResultList();
+        if (result.size()==0)
+            return false;
+        User user = result.get(0);
+        session.getTransaction().commit();
+        session.close();
+
+        Session session1 = factory.getCurrentSession();
+        session1.beginTransaction();
+        session1.delete(user);
+            session1.getTransaction().commit();
+            session1.close();
+        return true;
+    }
 }

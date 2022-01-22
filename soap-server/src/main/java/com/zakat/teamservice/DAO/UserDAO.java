@@ -13,4 +13,7 @@ public interface UserDAO {
     boolean addUserToGroup(User user, int groupId);
 
 
+    User getUserByUserTelegramId(String userTelegramId);
+
+    boolean deleteUserByTelegramId(String userTelegramId);
 }
