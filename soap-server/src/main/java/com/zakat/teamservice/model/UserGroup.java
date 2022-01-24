@@ -1,6 +1,8 @@
 package com.zakat.teamservice.model;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,8 +13,9 @@ import java.util.List;
  * Fields: group_id, groupName, colorMark
  */
 @XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 @Entity
-@Table(name = "userGroup", schema = "teamserv")
+@Table(name = "usergroup", schema = "teamserv")
 public class UserGroup {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,10 +27,8 @@ public class UserGroup {
     private String colorMark;
 
 
-
-    @OneToMany(mappedBy = "userGroup", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "userGroup", fetch = FetchType.EAGER)
     private List<User> userList = new ArrayList<>();
-
 
 
     public UserGroup() {

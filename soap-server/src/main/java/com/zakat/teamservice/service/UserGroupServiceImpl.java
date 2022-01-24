@@ -4,7 +4,6 @@ import com.zakat.teamservice.DAO.UserDAO;
 import com.zakat.teamservice.DAO.UserDAOImpl;
 import com.zakat.teamservice.DAO.UserGroupDAO;
 import com.zakat.teamservice.DAO.UserGroupDAOImpl;
-import com.zakat.teamservice.model.User;
 import com.zakat.teamservice.model.UserGroup;
 
 import javax.jws.WebMethod;
@@ -13,7 +12,6 @@ import java.util.List;
 
 /**
  * {@link UserGroupService} implementation.
- *
  */
 
 @WebService(endpointInterface = "com.zakat.teamservice.service.UserGroupService")
@@ -38,7 +36,7 @@ public class UserGroupServiceImpl implements UserGroupService {
     @WebMethod
     public boolean deleteUserGroup(int userGroup_id) {
         UserGroup userGroup = userGroupDAO.getUserGroupById(userGroup_id);
-        if(userGroup==null)
+        if (userGroup == null)
             return false;
         return userGroupDAO.deleteUserGroup(userGroup_id);
 
@@ -54,7 +52,19 @@ public class UserGroupServiceImpl implements UserGroupService {
     @Override
     @WebMethod
     public void updateUserGroup(UserGroup userGroup) {
-    userGroupDAO.updateUserGroup(userGroup);
+        userGroupDAO.updateUserGroup(userGroup);
+    }
+
+    @WebMethod
+    @Override
+    public UserGroup getUserGroupByName(String groupName) {
+        return userGroupDAO.getUserGroupByName(groupName);
+    }
+
+    @WebMethod
+    @Override
+    public boolean deleteUserGroupByName(String groupName) {
+        return userGroupDAO.deleteUserGroupByName(groupName);
     }
 
 

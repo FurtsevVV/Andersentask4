@@ -12,67 +12,33 @@ import java.util.List;
 @WebService
 public interface UserService {
 
-    /**
-     * Return User by Id
-     * @param user_id
-     * @return User Object
-     */
     @WebMethod
-     User getUserById(int user_id);
+    User getUserById(int user_id);
 
-    /**
-     * Return all users from current course
-     * @return List Users
-     */
     @WebMethod
-     List<User> findAllUsers();
+    List<User> findAllUsers();
 
-    /**
-     * Delete User
-     * @param user_id
-     * @return true if user has been removed
-     */
     @WebMethod
-     boolean deleteUserById(int user_id);
+    boolean deleteUserById(int user_id);
 
-    /**
-     * Update given user
-     *
-     * @param user
-     */
     @WebMethod
-     void updateUser(User user);
+    void updateUser(User user);
 
-    /**
-     * Add new user
-     *
-     * @param user
-     */
     @WebMethod
     void addUser(User user);
 
-    /**
-     * Get User by user telegram id
-     * @param userTelegramId
-     * @return
-     */
     @WebMethod
     User getUserByUserTelegramId(String userTelegramId);
 
-    /**
-     * Delete user by telegram id
-     * @param userTelegramId
-     * @return
-     */
     @WebMethod
     boolean deleteUserByTelegramId(String userTelegramId);
 
-    /**
-     * Add user to UserGroup
-     * @param telegramUserId
-     * @param groupName
-     * @return
-     */
     @WebMethod
     boolean addUserToUserGroup(String telegramUserId, String groupName);
+
+    @WebMethod
+    boolean deleteUserFromUserGroup(String telegramUserId, String groupName);
+
+    @WebMethod
+    List<User> findAllUsersFromGroup(String groupName);
 }

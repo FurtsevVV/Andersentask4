@@ -22,9 +22,9 @@ public class User {
     private int user_id;
     @Column(name = "username")
     private String username;
-    @Column(name="telegram_user_id")
+    @Column(name = "telegram_user_id")
     private String telegramUserId;
-    @Column(name="telegram_chat_id")
+    @Column(name = "telegram_chat_id")
     private String telegramChatId;
 
     @Column(name = "roles")
