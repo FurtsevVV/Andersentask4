@@ -1,4 +1,3 @@
-
 package com.zakat.teamclient.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -9,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for getUserByUserTelegramIdResponse complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="getUserByUserTelegramIdResponse"&gt;
  *   &lt;complexContent&gt;
@@ -23,12 +22,10 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getUserByUserTelegramIdResponse", propOrder = {
-    "_return"
+        "_return"
 })
 public class GetUserByUserTelegramIdResponse {
 
@@ -37,11 +34,9 @@ public class GetUserByUserTelegramIdResponse {
 
     /**
      * Gets the value of the return property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link User }
-     *     
+     *
+     * @return possible object is
+     * {@link User }
      */
     public User getReturn() {
         return _return;
@@ -49,11 +44,9 @@ public class GetUserByUserTelegramIdResponse {
 
     /**
      * Sets the value of the return property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link User }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link User }
      */
     public void setReturn(User value) {
         this._return = value;

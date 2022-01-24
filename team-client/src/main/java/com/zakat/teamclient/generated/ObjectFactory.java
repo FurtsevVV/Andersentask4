@@ -1,4 +1,3 @@
-
 package com.zakat.teamclient.generated;
 
 import javax.xml.bind.JAXBElement;
@@ -8,18 +7,17 @@ import javax.xml.namespace.QName;
 
 
 /**
- * This object contains factory methods for each 
- * Java content interface and Java element interface 
- * generated in the com.zakat.teamclient.generated package. 
- * <p>An ObjectFactory allows you to programatically 
- * construct new instances of the Java representation 
- * for XML content. The Java representation of XML 
- * content can consist of schema derived interfaces 
- * and classes representing the binding of schema 
- * type definitions, element declarations and model 
- * groups.  Factory methods for each of these are 
+ * This object contains factory methods for each
+ * Java content interface and Java element interface
+ * generated in the com.zakat.teamclient.generated package.
+ * <p>An ObjectFactory allows you to programatically
+ * construct new instances of the Java representation
+ * for XML content. The Java representation of XML
+ * content can consist of schema derived interfaces
+ * and classes representing the binding of schema
+ * type definitions, element declarations and model
+ * groups.  Factory methods for each of these are
  * provided in this class.
- * 
  */
 @XmlRegistry
 public class ObjectFactory {
@@ -43,14 +41,12 @@ public class ObjectFactory {
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.zakat.teamclient.generated
-     * 
      */
     public ObjectFactory() {
     }
 
     /**
      * Create an instance of {@link AddUserGroup }
-     * 
      */
     public AddUserGroup createAddUserGroup() {
         return new AddUserGroup();
@@ -58,7 +54,6 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AddUserGroupResponse }
-     * 
      */
     public AddUserGroupResponse createAddUserGroupResponse() {
         return new AddUserGroupResponse();
@@ -66,7 +61,6 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DeleteUserGroup }
-     * 
      */
     public DeleteUserGroup createDeleteUserGroup() {
         return new DeleteUserGroup();
@@ -74,7 +68,6 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DeleteUserGroupByName }
-     * 
      */
     public DeleteUserGroupByName createDeleteUserGroupByName() {
         return new DeleteUserGroupByName();
@@ -82,7 +75,6 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DeleteUserGroupByNameResponse }
-     * 
      */
     public DeleteUserGroupByNameResponse createDeleteUserGroupByNameResponse() {
         return new DeleteUserGroupByNameResponse();
@@ -90,7 +82,6 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DeleteUserGroupResponse }
-     * 
      */
     public DeleteUserGroupResponse createDeleteUserGroupResponse() {
         return new DeleteUserGroupResponse();
@@ -98,7 +89,6 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link FindAllUserGroup }
-     * 
      */
     public FindAllUserGroup createFindAllUserGroup() {
         return new FindAllUserGroup();
@@ -106,7 +96,6 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link FindAllUserGroupResponse }
-     * 
      */
     public FindAllUserGroupResponse createFindAllUserGroupResponse() {
         return new FindAllUserGroupResponse();
@@ -114,7 +103,6 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link GetUserGroupById }
-     * 
      */
     public GetUserGroupById createGetUserGroupById() {
         return new GetUserGroupById();
@@ -122,7 +110,6 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link GetUserGroupByIdResponse }
-     * 
      */
     public GetUserGroupByIdResponse createGetUserGroupByIdResponse() {
         return new GetUserGroupByIdResponse();
@@ -130,7 +117,6 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link GetUserGroupByName }
-     * 
      */
     public GetUserGroupByName createGetUserGroupByName() {
         return new GetUserGroupByName();
@@ -138,7 +124,6 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link GetUserGroupByNameResponse }
-     * 
      */
     public GetUserGroupByNameResponse createGetUserGroupByNameResponse() {
         return new GetUserGroupByNameResponse();
@@ -146,7 +131,6 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link UpdateUserGroup }
-     * 
      */
     public UpdateUserGroup createUpdateUserGroup() {
         return new UpdateUserGroup();
@@ -154,7 +138,6 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link UpdateUserGroupResponse }
-     * 
      */
     public UpdateUserGroupResponse createUpdateUserGroupResponse() {
         return new UpdateUserGroupResponse();
@@ -162,7 +145,6 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link User }
-     * 
      */
     public User createUser() {
         return new User();
@@ -170,7 +152,6 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link UserGroup }
-     * 
      */
     public UserGroup createUserGroup() {
         return new UserGroup();
@@ -178,11 +159,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddUserGroup }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link AddUserGroup }{@code >}
+     *
+     * @param value Java instance representing xml element's value.
+     * @return the new instance of {@link JAXBElement }{@code <}{@link AddUserGroup }{@code >}
      */
     @XmlElementDecl(namespace = "http://service.teamservice.zakat.com/", name = "addUserGroup")
     public JAXBElement<AddUserGroup> createAddUserGroup(AddUserGroup value) {
@@ -191,11 +170,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddUserGroupResponse }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link AddUserGroupResponse }{@code >}
+     *
+     * @param value Java instance representing xml element's value.
+     * @return the new instance of {@link JAXBElement }{@code <}{@link AddUserGroupResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://service.teamservice.zakat.com/", name = "addUserGroupResponse")
     public JAXBElement<AddUserGroupResponse> createAddUserGroupResponse(AddUserGroupResponse value) {
@@ -204,11 +181,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeleteUserGroup }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link DeleteUserGroup }{@code >}
+     *
+     * @param value Java instance representing xml element's value.
+     * @return the new instance of {@link JAXBElement }{@code <}{@link DeleteUserGroup }{@code >}
      */
     @XmlElementDecl(namespace = "http://service.teamservice.zakat.com/", name = "deleteUserGroup")
     public JAXBElement<DeleteUserGroup> createDeleteUserGroup(DeleteUserGroup value) {
@@ -217,11 +192,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeleteUserGroupByName }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link DeleteUserGroupByName }{@code >}
+     *
+     * @param value Java instance representing xml element's value.
+     * @return the new instance of {@link JAXBElement }{@code <}{@link DeleteUserGroupByName }{@code >}
      */
     @XmlElementDecl(namespace = "http://service.teamservice.zakat.com/", name = "deleteUserGroupByName")
     public JAXBElement<DeleteUserGroupByName> createDeleteUserGroupByName(DeleteUserGroupByName value) {
@@ -230,11 +203,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeleteUserGroupByNameResponse }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link DeleteUserGroupByNameResponse }{@code >}
+     *
+     * @param value Java instance representing xml element's value.
+     * @return the new instance of {@link JAXBElement }{@code <}{@link DeleteUserGroupByNameResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://service.teamservice.zakat.com/", name = "deleteUserGroupByNameResponse")
     public JAXBElement<DeleteUserGroupByNameResponse> createDeleteUserGroupByNameResponse(DeleteUserGroupByNameResponse value) {
@@ -243,11 +214,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeleteUserGroupResponse }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link DeleteUserGroupResponse }{@code >}
+     *
+     * @param value Java instance representing xml element's value.
+     * @return the new instance of {@link JAXBElement }{@code <}{@link DeleteUserGroupResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://service.teamservice.zakat.com/", name = "deleteUserGroupResponse")
     public JAXBElement<DeleteUserGroupResponse> createDeleteUserGroupResponse(DeleteUserGroupResponse value) {
@@ -256,11 +225,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link FindAllUserGroup }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link FindAllUserGroup }{@code >}
+     *
+     * @param value Java instance representing xml element's value.
+     * @return the new instance of {@link JAXBElement }{@code <}{@link FindAllUserGroup }{@code >}
      */
     @XmlElementDecl(namespace = "http://service.teamservice.zakat.com/", name = "findAllUserGroup")
     public JAXBElement<FindAllUserGroup> createFindAllUserGroup(FindAllUserGroup value) {
@@ -269,11 +236,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link FindAllUserGroupResponse }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link FindAllUserGroupResponse }{@code >}
+     *
+     * @param value Java instance representing xml element's value.
+     * @return the new instance of {@link JAXBElement }{@code <}{@link FindAllUserGroupResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://service.teamservice.zakat.com/", name = "findAllUserGroupResponse")
     public JAXBElement<FindAllUserGroupResponse> createFindAllUserGroupResponse(FindAllUserGroupResponse value) {
@@ -282,11 +247,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetUserGroupById }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link GetUserGroupById }{@code >}
+     *
+     * @param value Java instance representing xml element's value.
+     * @return the new instance of {@link JAXBElement }{@code <}{@link GetUserGroupById }{@code >}
      */
     @XmlElementDecl(namespace = "http://service.teamservice.zakat.com/", name = "getUserGroupById")
     public JAXBElement<GetUserGroupById> createGetUserGroupById(GetUserGroupById value) {
@@ -295,11 +258,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetUserGroupByIdResponse }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link GetUserGroupByIdResponse }{@code >}
+     *
+     * @param value Java instance representing xml element's value.
+     * @return the new instance of {@link JAXBElement }{@code <}{@link GetUserGroupByIdResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://service.teamservice.zakat.com/", name = "getUserGroupByIdResponse")
     public JAXBElement<GetUserGroupByIdResponse> createGetUserGroupByIdResponse(GetUserGroupByIdResponse value) {
@@ -308,11 +269,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetUserGroupByName }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link GetUserGroupByName }{@code >}
+     *
+     * @param value Java instance representing xml element's value.
+     * @return the new instance of {@link JAXBElement }{@code <}{@link GetUserGroupByName }{@code >}
      */
     @XmlElementDecl(namespace = "http://service.teamservice.zakat.com/", name = "getUserGroupByName")
     public JAXBElement<GetUserGroupByName> createGetUserGroupByName(GetUserGroupByName value) {
@@ -321,11 +280,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetUserGroupByNameResponse }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link GetUserGroupByNameResponse }{@code >}
+     *
+     * @param value Java instance representing xml element's value.
+     * @return the new instance of {@link JAXBElement }{@code <}{@link GetUserGroupByNameResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://service.teamservice.zakat.com/", name = "getUserGroupByNameResponse")
     public JAXBElement<GetUserGroupByNameResponse> createGetUserGroupByNameResponse(GetUserGroupByNameResponse value) {
@@ -334,11 +291,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link UpdateUserGroup }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link UpdateUserGroup }{@code >}
+     *
+     * @param value Java instance representing xml element's value.
+     * @return the new instance of {@link JAXBElement }{@code <}{@link UpdateUserGroup }{@code >}
      */
     @XmlElementDecl(namespace = "http://service.teamservice.zakat.com/", name = "updateUserGroup")
     public JAXBElement<UpdateUserGroup> createUpdateUserGroup(UpdateUserGroup value) {
@@ -347,11 +302,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link UpdateUserGroupResponse }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link UpdateUserGroupResponse }{@code >}
+     *
+     * @param value Java instance representing xml element's value.
+     * @return the new instance of {@link JAXBElement }{@code <}{@link UpdateUserGroupResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://service.teamservice.zakat.com/", name = "updateUserGroupResponse")
     public JAXBElement<UpdateUserGroupResponse> createUpdateUserGroupResponse(UpdateUserGroupResponse value) {
@@ -360,11 +313,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link User }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link User }{@code >}
+     *
+     * @param value Java instance representing xml element's value.
+     * @return the new instance of {@link JAXBElement }{@code <}{@link User }{@code >}
      */
     @XmlElementDecl(namespace = "http://service.teamservice.zakat.com/", name = "user")
     public JAXBElement<User> createUser(User value) {
@@ -373,11 +324,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link UserGroup }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link UserGroup }{@code >}
+     *
+     * @param value Java instance representing xml element's value.
+     * @return the new instance of {@link JAXBElement }{@code <}{@link UserGroup }{@code >}
      */
     @XmlElementDecl(namespace = "http://service.teamservice.zakat.com/", name = "userGroup")
     public JAXBElement<UserGroup> createUserGroup(UserGroup value) {

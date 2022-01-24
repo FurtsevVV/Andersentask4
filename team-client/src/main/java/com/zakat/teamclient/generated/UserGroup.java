@@ -1,19 +1,18 @@
-
 package com.zakat.teamclient.generated;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * <p>Java class for userGroup complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="userGroup"&gt;
  *   &lt;complexContent&gt;
@@ -28,15 +27,13 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "userGroup", propOrder = {
-    "groupId",
-    "groupName",
-    "colorMark",
-    "userList"
+        "groupId",
+        "groupName",
+        "colorMark",
+        "userList"
 })
 public class UserGroup {
 
@@ -49,7 +46,6 @@ public class UserGroup {
 
     /**
      * Gets the value of the groupId property.
-     * 
      */
     public int getGroupId() {
         return groupId;
@@ -57,7 +53,6 @@ public class UserGroup {
 
     /**
      * Sets the value of the groupId property.
-     * 
      */
     public void setGroupId(int value) {
         this.groupId = value;
@@ -65,11 +60,9 @@ public class UserGroup {
 
     /**
      * Gets the value of the groupName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getGroupName() {
         return groupName;
@@ -77,11 +70,9 @@ public class UserGroup {
 
     /**
      * Sets the value of the groupName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setGroupName(String value) {
         this.groupName = value;
@@ -89,11 +80,9 @@ public class UserGroup {
 
     /**
      * Gets the value of the colorMark property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getColorMark() {
         return colorMark;
@@ -101,11 +90,9 @@ public class UserGroup {
 
     /**
      * Sets the value of the colorMark property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setColorMark(String value) {
         this.colorMark = value;
@@ -113,25 +100,23 @@ public class UserGroup {
 
     /**
      * Gets the value of the userList property.
-     * 
+     *
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the userList property.
-     * 
+     *
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getUserList().add(newItem);
      * </pre>
-     * 
-     * 
+     *
+     *
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link User }
-     * 
-     * 
      */
     public List<User> getUserList() {
         if (userList == null) {
